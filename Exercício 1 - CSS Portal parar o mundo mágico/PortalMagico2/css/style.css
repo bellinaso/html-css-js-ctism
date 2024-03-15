@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* background: linear-gradient(180deg, #A6E627 10%, #fff 100%) no-repeat; */
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+}
+header {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: .7%;
+    width: 55%;
+    backdrop-filter: blur(8px);
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: transparent;
+    box-shadow: inset 0px -3px 15px #fff;
+    font-family: 'Cinzel Decorative';
+}
+header>a {
+    text-decoration: none;
+    color: #A80BE1;
+    transition: all .2s ease-in-out 0s;
+}
+header>a:hover {
+    font-size: 14pt;
+}

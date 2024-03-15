@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Exercício 1 -->
+    <div>
+        <h1>Exercício 1</h1>
+        <h2>Confirmar idade</h2>
+        <input type="button" value="Confirmar idade" onclick="confirmIdade()">
+    </div>
+    <hr>
+
+    <!-- Exercício 2 -->
+    <div>
+        <h1>Exercício 2</h1>
+        <h2>Campos obrigatórios</h2>
+        <label for="nome">
+            <input type="text" id="nome">
+        </label>
+        <br>
+        <label for="email">
+            <input type="text" id="email">
+        </label>
+        <br>
+        <label for="assunto">
+            <textarea id="assunto" cols="30" rows="10">Assunto</textarea>
+        </label>
+        <br>
+        <input type="button" value="Enviar" onclick="enviarEmail()">
+    </div>
+    <hr>
+
+    <!-- Exercício 3 -->
+    <div>
+        <h1>Exercício 3</h1>
+        <h2>Prova de Gerente/Diretor</h2>
+        <label>
+            Nota: Prova 1
+            <input type="number" name="provas">
+        </label>
+        <br>
+        <label>
+            Nota: Prova 2
+            <input type="number" name="provas">
+        </label>
+        <br>
+        <label>
+            Nota: Prova 3
+            <input type="number" name="provas">
+        </label>
+        <br>
+        <label>
+            Cargo escolhido
+            <select id="cargo">
+                <option>-- Escolha --</option>
+                <!-- Value = média da prova -->
+                <option value="7">Gerente</option>
+                <option value="8">Diretor</option>
+            </select>
+        </label>
+        <br>
+        <input type="submit" value="Enviar" onclick="prova()">
+        <p id="resultado">Resultado:</p>
+    </div>
+    <hr>
+
+    <!-- Exercício 4 -->
+    <div>
+        <h1>Exercício 4</h1>
+        <h2>Calculadora</h2>
+        <label>Valor 1</label>
+        <input type="number" id="valor1">
+        <br>
+        <label>Valor 2</label>
+        <input type="number" id="valor2">
+        <br>
+        <input type="radio" id="operacao" name="operacao" value="Soma"><label>Soma</label>
+        <br>
+        <input type="radio" id="operacao" name="operacao" value="Subtracão"><label>Subtração</label>
+        <br>
+        <input type="radio" id="operacao" name="operacao" value="Multiplicação"><label>Multiplicação</label>
+        <br>
+        <input type="radio" id="operacao" name="operacao" value="Divisão"><label>Divisão</label>
+        <br>
+        <input type="submit" value="Calcular" onclick="calcular()">
+        <p id="resultado">Resultado: </p>
+    </div>
+    <hr>
+    <h1>Exercício 5</h1>
+    <h2>Marque a opção correta em relação a função para realizar uma média:</h2>
+    <table border="1px">
+        <tr>
+            <td>
+                <p>a) <br>
+                    function fteste(x, a, b){ <br>
+                    m = (a + b) /2; <br>
+                    obj = document.getElementById('x'); <br>
+                    x.value = m;<br>
+                    }
+                </p>
+            </td>
+            <td>
+                <p style="color: red;">
+                    X) <br>
+                    function fteste(x, a, b){ <br>
+                    m = (a + b) /2; <br>
+                    obj = document. <br>
+                    getElementById(x); <br>
+                    obj.value = m; <br>
+                    }
+                </p>
+            </td>
+            <td>
+                <p>
+                    c) <br>
+                    function fteste(x, a, b){ <br>
+                    m = (a + b) /2; <br>
+                    obj = document. <br>
+                    getElementById(x); <br>
+                    x.value = m; <br>
+                    }
+                </p>
+            </td>
+            <td>
+                <p>
+                    d) <br>
+                    function fteste(x, a, b){ <br>
+                    m = (a + b) /2; <br>
+                    x.value = m; <br>
+                    }
+                </p>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Exercício 6</h1>
+    <h2>Marque a opção correta em relação a função para concatenar:</h2>
+    <table border="1px">
+        <tr>
+            <td>
+                <p>
+                    a) <br>
+                    function fteste(a, b){ <br>
+                    v1 = document.getElementById(a).value; <br>
+                    v2 = document.getElementById(b).value; <br>
+                    document.getElementById('prova').value = v1+v2; <br>
+                    }
+                </p>
+            </td>
+            <td>
+                <p>
+                    b) <br>
+                    function fteste(a, b){ <br>
+                    p = a + b; <br>
+                    document.getElementById(‘prova’).innerHTML = p; <br>
+                    }
+                </p>
+            </td>
+            <td>
+                <p style="color: red;">
+                    X) <br>
+                    function fteste(a, b){ <br>
+                    p = a.value + b.value; <br>
+                    document.getElementById(‘prova’).innerHTML = p; <br>
+                    }
+                </p>
+            </td>
+            <td>
+                <p>
+                    d) <br>
+                    function fteste(a, b){ <br>
+                    p = a.value + b.value; <br>
+                    document.getElementById(‘prova’).value = p; <br>
+                    }
+                </p>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <div>
+        <h1>Exercício 7</h1>
+        <h2>Window, document e select</h2>
+        <p>
+            window: Objeto que representa a janela do navegador. Contém propriedades e métodos relacionados à janela. <br> <br>
+
+            document: Objeto que representa o documento HTML carregado na janela. Oferece métodos para interagir com elementos HTML. <br> <br>
+
+            select: Uma tag HTML usada para criar listas suspensas (dropdowns) em formulários. Permite que os usuários escolham uma opção entre várias. <br>
+            option: Cria opções dentro do select. <br>
+            value: Define o valor associado a cada opção. <br>
+            Texto entre as tags option: É o texto visível para o usuário na lista suspensa.
+        </p>
+    </div>
+    <hr>
+    <div>
+        <h1>Exercício 8</h1>
+        <h2>Input</h2>
+        <p>
+            input: Uma tag HTML utilizada para criar campos interativos em formulários. Pode ser de vários tipos, como texto, número, checkbox, radio, entre outros. <br>
+            type: Define o tipo de input (texto, número, checkbox, etc.). <br>
+            placeholder: Texto exibido como dica dentro do campo. <br>
+            min e max: Limites para um input numérico. <br>
+            value: Valor padrão para um input.
+        </p>
+    </div>
+    <hr>
+    <div>
+        <h1>Exercício 9</h1>
+        <h2>Evento diferente do onClick</h2>
+        <div id="area" style="width: 120px; height: 50px; background-color: #707070; line-height: 50px; text-align: center;">
+            <p>Interaja</p>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h1>Exercício 10</h1>
+        <h2>Link para JS</h2>
+        <a href="javascript:mudarTexto()" id="texto">asdasd</a>
+        <script>
+        function mudarTexto() {
+            document.getElementById("texto").innerHTML = "Texto mudado";
+        }
+        </script>
+    </div>
+
+</body>
+<!-- window document select input -->
+</html>

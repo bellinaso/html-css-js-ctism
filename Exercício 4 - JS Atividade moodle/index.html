@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- Exercício 1 -->
+    <div>
+        <h1>Exercício 1</h1>
+        <h2>Verificador de núumero primo</h2>
+        
+        <label>Entre com um valor numerico: </label>
+        <input type="number" placeholder="Numero" id="num1">
+        <input type="button" value="Verificar" onclick="primo()">
+        <p id="resultado">O número é: </p>
+    </div>
+    <hr>
+    <!-- Exercício 2 -->
+    <div>
+        <h1>Exercício 2</h1>
+        <h2>Peso em outros planetas</h2>
+        <label>Peso: </label>
+        <input type="number" id="peso">
+        <p>
+            <input type="radio" name="planeta" value="mercurio">
+            Mercúrio
+        </p>
+        <p>
+            <input type="radio" name="planeta" value="venus">
+            Vênus
+        </p>
+        <p>
+            <input type="radio" name="planeta" value="marte">
+            Marte
+        </p>
+        <p>
+            <input type="radio" name="planeta" value="jupiter">
+            Júpiter
+        </p>
+        <p>
+            <input type="radio" name="planeta" value="saturno">
+            Saturno
+        </p>
+        <p>
+            <input type="radio" name="planeta" value="urano">
+            Urano
+        </p>
+        <p id="novoPeso"></p>
+        <input type="button" value="Calcular" onclick="calcPeso()">
+    </div>
+    <hr>
+    <!-- Exercício 3 -->
+    <div>
+        <h1>Exercício 3</h1>
+        <h2>Restaurante self-service</h2>
+        
+        <label for="pesoPrato">
+            Peso do prato
+            <input type="number" id="pesoPrato" placeholder="Peso em g">
+        </label>
+
+        <br>
+        <label for="refri">
+            <input type="checkbox" id="refri" name="bebida" value="naoAlcoolica" onclick="selecionado()">
+            R$ 4,00 Refri/Água
+        </label>
+        <input type="number" id="quantidadeRefri" name="quantidade" placeholder="Quantidade" disabled>
+
+        <br>
+        <label for="cerveja">
+            <input type="checkbox" id="cerveja" name="bebida" value="alcoolica" onclick="selecionado()">
+            R$ 12,00 Cerveja
+        </label>
+        <input type="number" id="quantidadeCerveja" name="quantidade" placeholder="Quantidade" disabled>
+        <br>
+        <input type="button" value="Enviar" onclick="calcPrato()">
+        <br>
+        <p id="preco">Preço: R$ 00,00</p>
+    </div>
+</body>
+</html>

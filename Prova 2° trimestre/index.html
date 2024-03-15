@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	</head>
+		<title>Pagina de encomenda</title>
+	</head>
+	<body>
+		<center>
+			<h1>Pão quentinho</h1>
+		</center>
+		<table>
+			<tr>
+				<td>
+					<label>
+						Nome:
+					</label>
+				</td>
+				<td>
+					<input type="text" placeholder="Insira o seu nome aqui" name="name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>
+						Quantidade:
+					</label>
+				</td>
+				<td>
+					<input type="number" min=1 placeholder="Insira a quantidade" name="quant">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>
+						Data de entrega:
+					</label>
+				</td>
+				<td>
+					<input type="date" name="entrega">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>
+						Produto:
+					</label>
+				</td>
+				<td>
+					<select name="produto">
+						<option value="pao">Pão</option>
+						<option value="bolo">Bolo</option>
+						<option value="salgado">Salgado</option>
+					</select>
+
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>
+						Opção de entrega:
+					</label>
+				</td>
+				<td>
+					<label>
+						<input type="radio" value="entrega" name="opc_entrega"> Entrega
+					</label>
+					<br>
+					<label>
+						<input type="radio" value="retirada" name="opc_entrega"> Retirada
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="Enviar encomenda" name="submit">
+				</td>
+				<td>
+					<input type="reset" value="Cancelar pedido" name="reset">
+				</td>
+			</tr>
+			
+		</table>
+	</body>
+
+</html>

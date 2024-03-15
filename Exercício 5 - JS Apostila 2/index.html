@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de JS</title>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Exercício 1</h1>
+        <h2>Verificação de campos</h2>
+        <form>
+            <label for="userName">Insira seu usuário</label>
+            <input type="text" id="userName">
+            <br>
+            <label for="userPass">Insira sua senha</label>
+            <input type="password" id="userPass">
+            <br>
+            <label for="userPassConf">Confirme sua senha</label>
+            <input type="password" id="userPassConf">
+            <br>
+            <input type="button" value="Enviar" onclick="verificarCampos()">
+        </form>
+        <p id="confirmLogin"></p>
+    </div>
+    <hr>
+    <div>
+        <h1>Exercício 2</h1>
+        <h2>Confirmação de email</h2>
+        <form>
+            <label for="userEmail">Insira seu email</label>
+            <input type="email" id="userEmail" placeholder="exemplo@mail.com">
+            <br>
+            <input type="button" value="Enviar" onclick="verificarEmail()">
+        </form>
+        <p id="confirmEmail"></p>
+    </div>
+    <hr>
+    <div>
+        <h1>Exercício 3</h1>
+        <h2>Verificar dia da semana</h2>
+        <input type="date" id="data">
+        <input type="button" value="Enviar" onclick="diaDaSemana()">
+        <p id="diaDaSemana"></p>
+    </div>
+    <hr>
+    <div>
+        <h1>Exercício 4</h1>
+        <h2>Verificar mês do ano</h2>
+        <input type="date" id="data2">
+        <input type="button" value="Enviar" onclick="mesDoAno()">
+        <p id="nomeDoMes"></p>
+    </div>
+    <hr>
+    <div>
+        <h1>Exercício 5</h1>
+        <h2>Dia de hoje</h2>
+        <p id="diaDeHoje"></p>
+    </div>
+    <hr>
+    <div>
+        <h1>Exercício 6</h1>
+        <h2>Gasto calórico</h2>
+        <form>
+            <label for="peso">Insira seu peso</label>
+            <input type="number" id="peso">
+            <br>
+            <label>
+                <input type="radio" name="exercicio" value="3">
+                Volei
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="exercicio" value="4">
+                Remo
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="exercicio" value="4.5">
+                Surfe
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="exercicio" value="5.5">
+                Dança
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="exercicio" value="6">
+                Futebol
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="exercicio" value="7">
+                Basquete
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="exercicio" value="8">
+                Ciclismo
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="exercicio" value="9">
+                Tênis
+            </label>
+            <br>
+            <label>Minutos</label>
+            <select id="tempo">
+                <option value="15">15</option>
+                <option value="30">30</option>
+                <option value="45">45</option>
+                <option value="60">60</option>
+                <option value="75">75</option>
+                <option value="90">90</option>
+            </select>
+            <br>
+            <input type="button" value="Calcular" onclick="calcCal()">
+        </form>
+        <p id="calorias"></p>
+    </div>
+</body>
+
+</html>
